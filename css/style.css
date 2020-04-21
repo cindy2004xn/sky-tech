@@ -1,0 +1,458 @@
+
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+h1{
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+p{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	letter-spacing: 2px;
+	line-height: 22px;
+}
+.wrapper{
+	overflow: hidden;
+}
+
+/*header*/
+.header	{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.navbar_logo{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-image: url('../image/group-32.png');
+	background-color: #a6a6a6;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0 0 20px 20px;
+	background-size: 80%;
+	float: left;
+}
+.menu{
+	float: right;
+}
+.nav li{
+	float: left;
+}
+.navbar .menu_item{
+	display: block;
+	padding: 24px;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 200;
+}
+.navbar .menu_item:before{
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transition: all 0.3s;
+}
+.navbar .menu_item:hover:before{
+	width: 70%;
+}
+@media (max-width: 960px) {
+	.nav{
+		display: none;
+	}
+	.menu-toggle{
+		padding: 12px;
+		float: right;
+		width: 56px;
+		height: 56px;
+		margin: 10px;
+	}
+	.menu-toggle span{
+		width: 100%;
+		display: block;
+		height: 2px;
+		background-color: #a6a6a6;
+		margin-bottom: 8px;
+	}
+	.navbar--collapse{
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	.navbar_logo{
+		height: 80px;
+		background-color: inherit;
+		background-size: 80px;
+	}
+	.popup-nav{
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		width: 100%;
+		height: 100%;
+		background-color: #1c1c1c;
+		visibility: hidden;
+	}
+	.popup-nav:target{
+		visibility: visible;
+	}
+}
+/*first*/
+.first-bg-cover{
+	background-image: url('../image/group-7@3x.jpg');
+	background-size: cover;
+	background-position: center;
+	
+}
+.first-text{
+	display: inline-block;
+}
+.heading{
+	font-size: 28px;
+	color: #fff;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.title-detail{
+	font-size: 72px;
+	color: #fff;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.first-line{
+	background-color: #fff;
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+}
+.heading-TW{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 200;
+	color: #fff;
+	font-size: 32px;
+	letter-spacing: 2px;
+}
+/*about*/
+.about-bg-cover{
+	background-image: url('../image/board-453758_1920.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.about-bg-cover:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #161616;
+	opacity: 0.7;
+}
+.about-logo-img{
+	display: block;
+	width: 144px;
+	height: 144px;
+	margin: 0 auto;
+	margin-bottom: -80px;
+	background-image: url('../image/group-32@3x.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 99;
+}
+.about-block{
+	margin: 0 auto;
+	padding: 60px 50px;
+	width: 50%;
+	height: 40%;
+	background-color:  rgba(216, 216, 216, 0.9);
+}
+.about-detail{
+	margin-top: 20px;
+}
+/*service*/
+.service-bg-cover{
+	background-color: rgba(216, 216, 216, 0.9);
+}
+.serivce-title{
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 50px;
+}
+.service-outer{
+	background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px;
+}
+.service-detail{
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 16px;
+	line-height: 50px;
+	display: inline-block;
+
+}
+.service-item{
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.icon{
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	display: inline-block;
+}
+.service-imgBox .img-inner-service{
+	width: 100%;
+	padding-top: calc(100% * 340 / 819);
+	position: relative;
+}
+.img{
+	display: block;
+}
+.service-imgBox .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.service-imgBox{
+	margin-bottom: 30px;
+}
+.row-2{
+	margin-left: 20px;
+
+}
+.service-2-title{
+	font-weight: 400;
+	font-size: 16px;
+	color: #000;
+}
+.service-2-text{
+	font-size: 10px;
+	margin-top: 20px;
+	color: #000;
+}
+/*shop*/
+.shop-bg-cover{
+	background-color: #888888;
+}
+.shop-title{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.shop-title h2{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.shop-title h3{
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	margin-top: 2px;
+}
+.title-line{
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	background-color: #c9c9c9;
+}
+.thumbnail_title{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.thumbnail_text{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.thumbnail_imgBox{
+	width: 100%;
+	padding-top: calc(100% * 250 / 262);
+}
+.thumbnail_imgBox_1{
+	width: 90%;
+	padding-top: calc(90% * 263 / 268);
+	margin-bottom: 22px;
+}
+.thumbnail_imgBox .image{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	max-height: 100%;
+}
+.thumbnail_imgBox_1 .image{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	max-height: 100%;
+}
+.thumb_line{
+	width: 100%;
+	margin: 0px auto;
+	height: 1px;
+	background-color: #c9c9c9;
+	margin-bottom: 10px;
+	opacity: 0.5;
+}
+/*produce*/
+.shop-produce-cover{
+	background-color: #888888;
+}
+.produce-title h2{
+	writing-mode: vertical-lr;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	letter-spacing: 2px;
+	color: #fff;
+	display: inline-block;
+}
+.produce-title-line{
+	display: inline-block;
+	width: 1px;
+	height: 90px;
+	background-color: #c9c9c9;
+	margin-left: 8px;
+}
+.img{
+	display: block;
+}
+.imgBox .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.imgBox{
+	margin-bottom: 30px;
+}
+.imgBox .imgBox-inner-produce-1{
+	width: 100%;
+	padding-top: calc(100% * 214 / 280);
+	position: relative;
+}
+.produce-title{
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.produce-text{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.imgBox .imgBox-inner-produce-2{
+	width: 100%;
+	padding-top: calc(100% * 337 / 353);
+	position: relative;
+}
+.produce-line{
+	width: 70%;
+	height: 1px;
+	background-color: #c9c9c9;
+	margin-bottom: 16px;
+	margin-left: 200px;
+	opacity: 0.5;
+}
+.contact-cover{
+	background-image: url('../image/cup-of-coffee-1280537_1920.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.contact-cover:before{
+	content: "";
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+	height: 60%;
+	background-color: #161616;
+	opacity: 0.7;
+}
+/*contact*/
+.contact-title{
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.detail-title{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.text{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 200;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.phone{
+	margin:30px 0;
+}
+/*footer*/
+.copyright h4{
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	float: left;
+}
+.company h4{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: #000;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	float: right;
+}
+
